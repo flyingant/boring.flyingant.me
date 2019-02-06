@@ -1,3 +1,3 @@
-Boring
+Boring Day
 =======
-One of the boring project
+One of the boring projects
