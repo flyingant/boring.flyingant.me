@@ -1,11 +1,50 @@
 body {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
-  background-color: #524490;
+  margin: 0;
+  height: 100vh;
+  background-color: #87cefa;
 }
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: auto;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+}
+
+.piggy {
+  width: 88px;
+  height: 62px;
+}
+
+.piggy-walk {
+  background: url('../assets/images/piggy-walking.png') 100% 0 no-repeat;
+  animation:anim 1s steps(23) infinite,movelr 120s linear reverse infinite;
+  -webkit-animation:anim 1s steps(23) infinite,movelr 120s linear reverse infinite;
+}
+
+@-webkit-keyframes movelr{
+  from{left:-2%}
+  to{left:101%}
+}
+@keyframes movelr{
+  from{left:-2%}
+  to{left:101%}
+}
+@-webkit-keyframes anim{
+  from{background-position:0 0}
+  to{background-position:100% 0}
+}
+@keyframes anim{
+  from{background-position:0 0}
+  to{background-position:100% 0}
 }
